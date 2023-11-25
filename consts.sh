@@ -6,7 +6,7 @@ NPROC="$(nproc)"
 export PWD
 export NPROC
 
-export ROOT_FS='archriscv-2023-07-10.tar.zst'
+export ROOT_FS='archriscv-2023-10-09.tar.zst'
 export ROOT_FS_DL="https://archriscv.felixc.at/images/${ROOT_FS}"
 
 # select 'arch', 'defconfig'
@@ -25,7 +25,7 @@ export KERNEL='defconfig'
 # sun20i-d1-lichee-rv
 # sun20i-d1-mangopi-mq-pro
 # sun20i-d1-nezha
-export DEVICE_TREE=sun20i-d1-lichee-rv-dock
+export DEVICE_TREE=sun20i-d1-devterm-v3.14
 
 # folder to mount rootfs
 export MNT="${PWD}/mnt"
@@ -41,8 +41,8 @@ export USE_CHROOT=1
 # use extlinux ('extlinux') or boot.scr ('script') for loading the kernel?
 export BOOT_METHOD='extlinux'
 
-export VERSION_OPENSBI='1.2'
-export VERSION_KERNEL='6.4'
+export VERSION_OPENSBI='1.3'
+export VERSION_KERNEL='6.6'
 
 export SOURCE_OPENSBI="https://github.com/riscv-software-src/opensbi/releases/download/v${VERSION_OPENSBI}/opensbi-${VERSION_OPENSBI}-rv-bin.tar.xz"
 export SOURCE_UBOOT='https://github.com/smaeul/u-boot'
