@@ -95,6 +95,7 @@ ${SUDO} cp -a "${OUT_DIR}/modules/${KERNEL_RELEASE}" "${MNT}/lib/modules"
 ${SUDO} install -D -p -m 644 "${OUT_DIR}/8723ds.ko" "${MNT}/lib/modules/${KERNEL_RELEASE}/kernel/drivers/net/wireless/8723ds.ko"
 
 ${SUDO} rm "${MNT}/lib/modules/${KERNEL_RELEASE}/build"
+${SUDO} ls "${MNT}/lib/modules/${KERNEL_RELEASE}
 ${SUDO} rm "${MNT}/lib/modules/${KERNEL_RELEASE}/source"
 
 ${SUDO} depmod -a -b "${MNT}" "${KERNEL_RELEASE}"
