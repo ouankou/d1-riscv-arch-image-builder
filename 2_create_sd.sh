@@ -127,10 +127,10 @@ echo 'licheerv' >hostname
 ${SUDO} mv hostname "${MNT}/etc/"
 
 # # updating ...
-# ${SUDO} arch-chroot ${MNT} pacman -Syu
-# ${SUDO} arch-chroot ${MNT} pacman -S wpa_supplicant
-# ${SUDO} arch-chroot ${MNT} pacman -S netctl
-# ${SUDO} arch-chroot ${MNT} pacman -S --asdeps dialog
+${SUDO} arch-chroot ${MNT} pacman -Syu
+${SUDO} arch-chroot ${MNT} pacman -S wpa_supplicant
+${SUDO} arch-chroot ${MNT} pacman -S netctl
+${SUDO} arch-chroot ${MNT} pacman -S --asdeps dialog
 
 # done
 if [ "${USE_CHROOT}" != 0 ]; then
